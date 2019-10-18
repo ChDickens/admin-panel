@@ -1,0 +1,232 @@
+:root {
+  --transparent: transparent;
+  --black: #22292f;
+  --white: white;
+  --white-50: rgba(255, 255, 255, 0.5);
+  --danger: #e74444;
+  --success: #21b978;
+  --warning: #ffeb3b;
+  --info: #03a9f4;
+  --primary: #4099de;
+  --primary-dark: #297ec0;
+  --primary-70: rgba(64, 153, 222, 0.7);
+  --primary-50: rgba(64, 153, 222, 0.5);
+  --primary-30: rgba(64, 153, 222, 0.3);
+  --primary-10: rgba(64, 153, 222, 0.1);
+  --logo: #252d37;
+  --sidebar-icon: #b3c1d1;
+  --20: #f6fbff;
+  --30: #f4f7fa;
+  --40: #eef1f4;
+  --50: #e3e7eb;
+  --60: #bacad6;
+  --70: #b3b9bf;
+  --80: #7c858e;
+  --90: #3c4b5f;
+  --90-half: rgba(40, 54, 61, 0.5);
+  --warning-light: #fefcbf;
+  --warning-dark: #b7791f;
+  --success-light: #c6f6d5;
+  --success-dark: #38a169;
+  --danger-light: #fed7d7;
+  --danger-dark: #e53e3e;
+  --info-light: #bee3f8;
+  --info-dark: #3182ce;
+}
+
+/* Vue
+---------------------------------------------------------------------------- */
+[v-cloak] {
+  display: none !important;
+}
+
+/* Search
+---------------------------------------------------------------------------- */
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: searchfield-cancel-button;
+}
+
+.search-icon-center {
+  top: 8px;
+}
+
+/* Content
+---------------------------------------------------------------------------- */
+.content {
+  min-width: 66.25rem;
+  width: 100%;
+  max-width: calc(100vw - 13.75rem);
+}
+
+/* Background Image
+---------------------------------------------------------------------------- */
+.bg-grad-sidebar {
+  background: linear-gradient(0deg, #7e8ea1 0%, #3c4655 100%) fixed;
+}
+
+/* Custom Padding
+---------------------------------------------------------------------------- */
+
+.pt-header {
+  padding-top: 5.75rem;
+}
+
+.p-sidebar {
+  padding-left: 13.75rem;
+}
+
+.sidebar-icon {
+  margin-right: 1.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Fade Transition
+---------------------------------------------------------------------------- */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.w-sidebar {
+  width: 13.75rem;
+}
+
+.flex-none {
+  flex: none;
+}
+
+.bg-grad-sidebar {
+  background-image: -webkit-gradient(linear,left bottom,left top,from(#7e8ea1),to(#3c4655));
+  background-image: linear-gradient(0deg,#7e8ea1,#3c4655);
+  background-attachment: fixed;
+}
+
+.pt-header {
+  padding-top: 5.75rem;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bg-logo {
+  background-color: var(--logo);
+}
+
+.pin-none {
+  top:auto;
+  right:auto;
+  bottom:auto;
+  left:auto;
+}
+.pin {
+  right:0;
+  left:0;
+}
+.pin,
+.pin-y {
+  top:0;
+  bottom:0;
+}
+.pin-x {
+  right:0;
+  left:0;
+}
+.pin-t {
+  top:0;
+}
+.pin-r {
+  right:0;
+}
+.pin-b {
+  bottom:0;
+}
+.pin-l {
+  left:0;
+}
+.fill-current {
+  fill: currentColor;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+.z-20 {
+  z-index: 20;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.items-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.shadow {
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05);
+}
+
+.px-view {
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
+}
+
+.py-view {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h-header {
+  height: 3.75rem;
+}
+
+.menu-item {
+  .btn-link {
+    color: var(--white);
+    &:hover {
+      color: var(--white);
+    }
+  }
+  .nav-link {
+    color: var(--white);
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
+
+
+
