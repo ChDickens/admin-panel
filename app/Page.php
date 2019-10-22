@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Page extends Model
 {
+    protected $fillable = [
+      'url', 'name', 'description', 'seo_title', 'meta_description', 'view_count', 'status', 'order'
+    ];
+
     /**
      * Scope a query to only include active customers.
      *
@@ -14,6 +18,6 @@ class Page extends Model
      */
     public function scopeActive($query)
     {
-        return $query->where('status', 1);
+        return $query->where('status', 'published');
     }
 }

@@ -32,12 +32,13 @@ class PageController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @return \Illuminate\Http\Response
      */
-    public function store(PageRequest $request)
+    public function store(Request $request)
     {
-        //
+        Page::create($request->all());
+        return redirect()->route('page.index');
     }
 
     /**
@@ -48,7 +49,8 @@ class PageController extends Controller
      */
     public function show($id)
     {
-        //
+        $page = Page::findOrFail($id);
+        return view('admin.page.show', compact('page'));
     }
 
     /**
@@ -59,7 +61,8 @@ class PageController extends Controller
      */
     public function edit($id)
     {
-        //
+        $page = Page::findOrFail($id);
+        return view('admin.page.edit', compact('page'));
     }
 
     /**
@@ -71,7 +74,9 @@ class PageController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $page = Page::find($id);
+        $page->update($request->all());
+        return redirect()->route('page.index');
     }
 
     /**
@@ -82,6 +87,8 @@ class PageController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $page = Page::find($id);
+        $page->delete();
+        return redirect()->route('page.index');
     }
 }

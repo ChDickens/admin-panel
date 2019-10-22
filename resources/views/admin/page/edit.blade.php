@@ -1,7 +1,7 @@
 @extends('admin.layout')
 
 @section('content')
-    <h1>Создать страницу</h1>
+    <h1>Редактировать страницу - {{ $page->name }}</h1>
     <form action="{{ route('page.store') }}" method="post">
         @csrf
         <div class="row">

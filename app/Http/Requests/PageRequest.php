@@ -25,7 +25,7 @@ class PageRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'url' => 'required|Post:unique',
+            'url' => 'required|Page:unique',
         ];
     }
 
