@@ -25,7 +25,7 @@ class MenuController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.menu.create');
     }
 
     /**
@@ -36,7 +36,8 @@ class MenuController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Menu::create($request->all());
+        return redirect()->route('menu.index');
     }
 
     /**
@@ -47,7 +48,8 @@ class MenuController extends Controller
      */
     public function show($id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        return view('admin.menu.show', compact('menu'));
     }
 
     /**
@@ -58,7 +60,8 @@ class MenuController extends Controller
      */
     public function edit($id)
     {
-        //
+        $menu = Menu::findOrFail($id);
+        return view('admin.menu.edit', compact('page'));
     }
 
     /**
@@ -70,7 +73,9 @@ class MenuController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $menu = Menu::find($id);
+        $menu->update($request->all());
+        return redirect()->route('menu.index');
     }
 
     /**
@@ -81,6 +86,8 @@ class MenuController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $menu = Menu::find($id);
+        $menu->delete();
+        return redirect()->route('menu.index');
     }
 }

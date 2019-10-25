@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Menu extends Model
 {
+    protected $fillable = [
+        'name', 'parent_id', 'status', 'type', 'url', 'order'
+    ];
+
     /**
      * Scope a query to only include active customers.
      *
@@ -14,6 +18,6 @@ class Menu extends Model
      */
     public function scopeActive($query)
     {
-        return $query->where('status', 1);
+        return $query->where('status', 'published');
     }
 }
