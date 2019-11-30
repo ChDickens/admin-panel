@@ -1,7 +1,10 @@
 @extends('admin.layout')
 
+@section('head')
+    Создать пункт меню
+@endsection
+
 @section('content')
-    <h1>Создать пункт меню</h1>
     <form action="{{ route('menu.store') }}" method="post">
         @csrf
         <div class="row">
@@ -39,7 +42,7 @@
             <div class="col-lg-6">
                 <div class="form-group">
                     <label for="menuUrl">Url</label>
-                    <input type="text" name="order" id="menuUrl" class="form-control {{ $errors->has('url') ? ' is-invalid' : '' }}" placeholder="Сортировка" value="">
+                    <input type="text" name="url" id="menuUrl" class="form-control {{ $errors->has('url') ? ' is-invalid' : '' }}" placeholder="Url" value="">
                     @if ($errors->has('url'))
                         <div class="invalid-feedback">
                             {{ $errors->first('url') }}

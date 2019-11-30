@@ -25,7 +25,8 @@ class PageRequest extends FormRequest
     {
         return [
             'name' => 'required',
-            'url' => 'required|Page:unique',
+            'description' => 'required',
+            'url' => 'required',
         ];
     }
 
@@ -49,7 +50,8 @@ class PageRequest extends FormRequest
     public function attributes()
     {
         return [
-            'name' => 'Заголовок'
+            'name' => 'Заголовок',
+            'description' => 'Описание',
         ];
     }
 }

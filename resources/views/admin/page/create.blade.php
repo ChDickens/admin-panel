@@ -1,14 +1,16 @@
 @extends('admin.layout')
 
+@section('head')
+    Создать страницу
+@endsection
 @section('content')
-    <h1>Создать страницу</h1>
     <form action="{{ route('page.store') }}" method="post">
         @csrf
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
                     <label for="pageTitle">Заголовок</label>
-                    <input type="text" name="name" id="pageTitle" class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="Заголовок страницы" value="">
+                    <input type="text" name="name" id="pageTitle" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}" placeholder="Заголовок страницы" value="">
                     @if ($errors->has('name'))
                         <div class="invalid-feedback">
                             {{ $errors->first('name') }}
@@ -24,7 +26,7 @@
                 </div>
                 <div class="form-group">
                     <label for="description">Контент</label>
-                    <textarea name="description" id="description" cols="30" rows="10" class="form-control {{ $errors->has('description') ? ' is-invalid' : '' }}"></textarea>
+                    <textarea name="description" id="description" cols="30" rows="10" class="form-control {{ $errors->has('name') ? 'is-invalid' : '' }}"></textarea>
                     @if ($errors->has('description'))
                         <div class="invalid-feedback">
                             {{ $errors->first('description') }}

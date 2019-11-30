@@ -17,4 +17,5 @@ Route::group(['prefix' => 'admin-panel', 'middleware' => 'auth'], function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{url?}', 'FrontController@show')->name('page.simple');
