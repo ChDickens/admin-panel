@@ -5,8 +5,9 @@
 @endsection
 
 @section('content')
-    <form action="{{ route('page.store') }}" method="post">
+    <form action="{{ route('page.update', $page->id) }}" method="post">
         @csrf
+        <input name="_method" type="hidden" value="PUT">
         <div class="row">
             <div class="col-lg-6">
                 <div class="form-group">
@@ -67,7 +68,7 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <input class="btn btn-primary" type="submit" name="submit" value="Создать">
+                <input class="btn btn-primary" type="submit" name="submit" value="Редактировать">
                 <a href="{{ url()->previous() }}" class="btn btn-danger">Отмена</a>
             </div>
         </div>

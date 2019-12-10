@@ -10,6 +10,7 @@
         <tr>
             <td>Id страницы</td>
             <td>Имя страницы</td>
+            <td>Url страницы</td>
             <td>Управление</td>
         </tr>
         </thead>
@@ -18,9 +19,14 @@
             <tr>
                 <td>{{ $item->id }}</td>
                 <td>{{ $item->name }}</td>
+                <td>{{ $item->url }}</td>
                 <td>
-                    <a href="{{ route('menu.edit', $item->id) }}" class="btn btn-success">Редактировать</a>
-                    <a href="" class="btn btn-danger">Удалить</a>
+                    <a href="{{ route('menu.edit', $item->id) }}" class="btn btn-success">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="" class="btn btn-danger">
+                        <i class="fas fa-trash"></i>
+                    </a>
                 </td>
             </tr>
         @endforeach

@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Email extends Model
 {
+    protected $fillable = [
+        'email', 'status'
+    ]
     /**
      * Scope a query to only include active customers.
      *

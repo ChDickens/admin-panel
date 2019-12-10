@@ -1,5 +1,9 @@
 @extends('admin.layout')
 
+@section('head')
+    Создать настройку
+@endsection
+
 @section('content')
-    <h1>Создать настройку</h1>
+
 @endsection

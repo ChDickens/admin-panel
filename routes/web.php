@@ -1,8 +1,6 @@
 <?php
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::redirect('/home', '/');
 
 Route::group(['prefix' => 'admin-panel', 'middleware' => 'auth'], function () {
     Route::get('/', 'DashboardController@index')->name('dashboard');
@@ -18,4 +16,6 @@ Route::group(['prefix' => 'admin-panel', 'middleware' => 'auth'], function () {
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'FrontController@mainPage')->name('main.page');
+Route::post('/send', 'MailController@send')->name('send.mail');
 Route::get('/{url?}', 'FrontController@show')->name('page.simple');

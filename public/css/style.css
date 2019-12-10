@@ -1,0 +1,434 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #181818;
+}
+header {
+    /*clip-path: polygon(0 0, 100% 0, 100% 87%, 0 95%);*/
+}
+header a {
+    color: #fff;
+    font-size: 24px;
+}
+.uk-button-default {
+    border: none;
+}
+.logo {
+    font-family: 'Righteous', cursive;
+    letter-spacing: 6px;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #181818;
+    opacity: 0.7;
+    z-index: 1;
+}
+.section-dark {
+    background: #181818;
+}
+.navbar .uk-container {
+    border-top: 1px solid rgba(255,255,255,.1)
+}
+.navbar.uk-navbar-sticky {
+    border-top: 0 solid;
+    margin-top: 0 !important;
+}
+.navbar-black.uk-navbar-sticky {
+    background: #181818;
+}
+.navbar li a {
+    font-size: 20px;
+    line-height: 75px;
+}
+.color-white {
+    color: #fff !important;
+}
+.uk-slideshow-items h2 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 22px;
+    margin-bottom: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.uk-slideshow-items h3 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 60px;
+    margin-bottom: 22px;
+    color: #00a3bb;
+    line-height: 60px;
+}
+.uk-slideshow-items p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 22px;
+    margin-bottom: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.advantages h2::before,
+.partners h2::before,
+.question h2::before,
+.why h2::before,
+.sale h2::before {
+    content: '';
+    display: block;
+    width: 2em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .35em;
+    margin-bottom: .1em;
+    border-style: solid;
+    color: #00a3bb;
+}
+.button-more {
+    box-shadow: 0 0 0 1px #00a3bb inset;
+    color: #00a3bb;
+    background-color: transparent;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+.button-more:hover {
+    box-shadow: 0 0 0 2em #00a3bb inset;
+    color: #ffffff;
+}
+.button-more-inverse {
+    box-shadow: 0 0 0 2em #00a3bb inset;
+    color: #ffffff;
+    background-color: transparent;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+.button-more-inverse:hover {
+    box-shadow: 0 0 0 1px #00a3bb inset;
+    color: #fff;
+}
+.stages {
+    background-image: url(http://addison.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/05/bgn-footer.jpg);
+    background-color: #985f3e;
+    padding: 120px 0;
+}
+.stages p {
+    font-family: 'Arimo', sans-serif;
+}
+.stages h2::before {
+    content: '';
+    display: block;
+    left: 0;
+    bottom: -40px;
+    width: 2em;
+    position: absolute;
+    margin-bottom: 20px;
+    border-style: solid;
+    color: #00a3bb;
+}
+.step h3 {
+    font-size: 20px;
+    text-align: left;
+}
+.step h3::before {
+    content: '';
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    background: #00a3bb;
+}
+.step i {
+    font-size: 30px;
+}
+.step span {
+    width: 34px;
+    height: 30px;
+    display: inline-block;
+}
+.small-info {
+    color: #fff;
+    text-align: left;
+    margin-top: 35px;
+}
+.w-400 {
+    width: 400px;
+}
+.stages .step span{
+    padding: 30px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1em #ffffff inset;
+    color: #00a3bb;
+}
+.why .step span{
+    padding: 30px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1em #ffffff inset;
+    color: #00a3bb;
+}
+.why {
+    background: url("../images/photo-1.jpg") no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+.question {
+    background: url("../images/question_bg.jpg") no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
+    margin-bottom: -100px;
+}
+.bottom-arrow {
+    left: 130px;
+    bottom: -90px;
+}
+.top-arrow {
+    left: 265px;
+    top: -70px;
+}
+.top-arrow-1 {
+    left: 415px;
+    bottom: -90px;
+}
+.button-send {
+    background: #00a3bb;
+}
+footer {
+    background-image: url(http://addison.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/05/bgn-footer.jpg);
+    background-color: #985f3e;
+    padding: 120px 0;
+    color: #fff;
+}
+.inner-header {
+    background-image: url(http://addison.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/05/bgn-footer.jpg);
+}
+footer .logo {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.pulse {
+    background-image: url(http://mebelera.com/wp-content/uploads/2019/04/podbor_mebel.png);
+    transition: .5s;
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 50px;
+    top: 30%;
+    z-index: 10;
+}
+.pulse:hover {
+    box-shadow: none;
+    animation: none;
+}
+.pulse::before, .pulse::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: pulse 1.8s linear infinite;
+    opacity: 0;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-top: 3px solid #00e99e;
+    border-bottom: 3px solid #3fb6fe;
+    border-left: 3px solid #00e99e;
+    border-right: 3px solid #3fb6fe;
+}
+.bloc {
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+.pulse::after {
+    animation-delay: .5s;
+}
+@keyframes phone {
+    0%, 100% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(21deg);
+    }
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+.partners {
+    background: #fff;
+    color: #181818;
+    z-index: 0;
+}
+.offcanvas-bar {
+    background: #00a3bb;
+}
+.choose-form .uk-input {
+    border: 1px solid #fff;
+    color: #fff;
+}
+.choose-form .uk-input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.choose-form .uk-input:-ms-input-placeholder {
+    color: #fff;
+}
+
+.choose-form .uk-input::-ms-input-placeholder {
+    color: #fff;
+}
+.sales {
+    background: url('../images/rassrochka_previu.jpg') no-repeat center center;
+    min-height: 500px;
+}
+.social li a {
+    font-size: 40px;
+    color: #fff;
+}
+.social li a:hover {
+    font-size: 40px;
+    color: #fff;
+}
+/*.social li a.vk:hover {*/
+    /*font-size: 40px;*/
+    /*color: #4E729A*/
+/*}*/
+.menu-button {
+    color: #fff;
+}
+.main-mobile-menu {
+    left: 0 !important;
+    right: 0 !important;
+}
+.main-mobile-menu .uk-navbar {
+    background: transparent !important;
+}
+.main-mobile-menu .uk-navbar-nav {
+    display: block;
+}
+.only-mobile {
+    display: none;
+    padding: 10px;
+    width: 220px;
+    color: #fff;
+    background: #00a3bb;
+    text-align: center;
+    position: fixed;
+    right: -98px;
+    top: 135px;
+    transform: rotate(-90deg);
+    z-index: 1;
+}
+.menu-button.uk-sticky {
+        background: #181818;
+    color: #fff;
+}
+@media (max-width: 480px) {
+    .mobile-class {
+        position: relative !important;
+    }
+    .uk-slideshow {
+        display: none;
+    }
+    .question .button-send {
+        margin-bottom:  75px !important;
+    }
+    .pulse {
+        display: none;
+    }
+    .only-mobile {
+        display: block;
+    }
+    .w-400 {
+        width:100%;
+    }
+    .step h3,
+    .small-info {
+        text-align: center;
+    }
+    .step h3:before {
+    bottom: -40px;
+    margin: 0 auto;
+    position: relative;
+    }
+    .why .step {
+        margin-top: 15px;
+    }
+    header {
+        clip-path: none;
+    }
+    .test-info h3 {
+        font-size: 40px !important;
+        line-height: 34px;
+    padding: 0 20px;
+    }
+    .test-info h2 {
+        font-size: 30px !important;
+        line-height: 34px;
+    padding: 0 20px;
+    }
+    .test-info {
+        top: 40% !important;
+    }
+}
+#userPhone-info2,
+#userName-info2 {
+    color: #fff;
+}
+.work [class*=uk-inline] {
+    width: 373px;
+    height: 280px;
+    position: relative;
+    overflow: hidden;
+}
+.h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+.uk-accordion-title {
+    width: 300px;
+    margin: 15px auto;
+}
+.uk-dropdown-nav li a {
+    line-height: 25px;
+}
+.uk-dropdown {
+    padding: 10px 23px;
+}
+.additional-price {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 18px;
+    background: rgba(34,34,34,.8);
+}
+.advantages  .button-more-inverse {
+    padding: 8px 10px;
+}

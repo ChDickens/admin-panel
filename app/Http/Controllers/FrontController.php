@@ -7,13 +7,23 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller
 {
-    public function show($url = null)
+    public function mainPage()
     {
-        $page = Page::where('url', $url)->first();
+        $page = Page::active()->where('url', 'home')->first();
         if (!$page) {
             abort(404, 'Page not found');
         }
 
-        return view('welcome', compact('page'));
+        return view('front.main-page', compact('page'));
+    }
+
+    public function show($url = null)
+    {
+        $page = Page::active()->where('url', $url)->first();
+        if (!$page) {
+            abort(404, 'Page not found');
+        }
+
+        return view('front.inner', compact('page'));
     }
 }
